@@ -195,6 +195,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>SpringMVC-Maven</finalName>
+		<finalName>Demo-SpringMVC</finalName>
 	</build>
 </project>

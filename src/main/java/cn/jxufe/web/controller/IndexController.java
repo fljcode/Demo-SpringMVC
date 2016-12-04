@@ -27,8 +27,8 @@ public class IndexController {
 	@RequestMapping("/index")
 	public String list(HttpServletRequest request){
 		System.out.println("--------------------" + chinese);
-		System.out.println("--------------------" + username);
-		System.out.println("--------------------" + fan);
+		System.out.println("-------************-------------" + username);
+		System.out.println("----------*****************----------" + fan);
 		System.out.println("---------" + serviceUtil.outName());
 		return "index";
 	}
