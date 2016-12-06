@@ -23,5 +23,17 @@ public class ServiceUtil {
 
 		return "index";
 	}
+
+
+
+	public String getLing() {
+		return ling;
+	}
+
+
+
+	public void setLing(String ling) {
+		this.ling = ling;
+	}
 	
 }

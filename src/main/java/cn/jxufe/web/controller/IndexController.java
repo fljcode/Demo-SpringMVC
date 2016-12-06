@@ -22,10 +22,14 @@ public class IndexController {
 	@Autowired
 	private ServiceUtil serviceUtil;
 	
+	@Autowired
+	private ServiceUtil serviceUtil2;
 	
 	//http://localhost:8080/SpringMVC-Maven/index.htm
 	@RequestMapping("/index")
 	public String list(HttpServletRequest request){
+		serviceUtil.setLing("fanlingjie");
+		System.out.println("------------------" + serviceUtil2.getLing());
 		System.out.println("--------------------" + chinese);
 		System.out.println("-------************-------------" + username);
 		System.out.println("----------*****************----------" + fan);
