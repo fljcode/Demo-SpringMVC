@@ -35,9 +35,29 @@ public class IndexController {
 		System.out.println("----------*****************----------" + fan);
 		System.out.println("---------" + serviceUtil.outName());*/
 		System.out.println("kkkkkkkkkkkkkkkk" + "realtime".equalsIgnoreCase(null));
+		System.out.println("branch changed");
 		ModelAndView r = new ModelAndView();
 		r.setViewName("index");
 		return r;
 	}
+	@RequestMapping("/convert")
+	public String testRedict(HttpServletRequest request){
+	
+		System.out.println("------------进入重定向----------------");
+		
+		return "redirect:/index";
+	}
+	@RequestMapping("/convert2")
+	public ModelAndView testRedict2(HttpServletRequest request){
+	
+		System.out.println("------------进入重定向----------------");
+		ModelAndView r = new ModelAndView();
+		r.setViewName("redirect:/index");
+		return r;
+	}
+	
+	
+	
+	
 	
 }
