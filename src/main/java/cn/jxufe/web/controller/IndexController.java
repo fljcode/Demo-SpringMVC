@@ -35,7 +35,7 @@ public class IndexController {
 		System.out.println("----------*****************----------" + fan);
 		System.out.println("---------" + serviceUtil.outName());*/
 		System.out.println("kkkkkkkkkkkkkkkk" + "realtime".equalsIgnoreCase(null));
-		System.out.println("branch changed");
+		System.out.println("branch changed2 ");
 		ModelAndView r = new ModelAndView();
 		r.setViewName("index");
 		return r;
