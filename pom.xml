@@ -22,6 +22,21 @@
 		</dependency>
 
 		<!-- spring begin -->
+		  <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-webmvc</artifactId>
+         <version>3.2.0.RELEASE</version>
+     	</dependency> 
+     	<dependency>  
+		    <groupId>org.aspectj</groupId>  
+		    <artifactId>aspectjweaver</artifactId>  
+		    <version>1.6.12</version>  
+		</dependency> 
+     	<!-- <dependency>
+		    <groupId>aopalliance</groupId>
+		    <artifactId>aopalliance</artifactId>
+		    <version>1.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -39,13 +54,13 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+		 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -56,7 +71,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
-		</dependency>
+		</dependency> -->
 		<!-- spring end -->
 
 		<!-- web jar -->
@@ -193,6 +208,29 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.31</version>
 		</dependency>
+		<!-- shiro -->
+		
+		<dependency>  
+        <groupId>org.apache.shiro</groupId>  
+        <artifactId>shiro-core</artifactId>  
+        <version>1.2.3</version>  
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.shiro</groupId>
+	        <artifactId>shiro-ehcache</artifactId>
+	        <version>1.2.3</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.shiro</groupId>
+	        <artifactId>shiro-web</artifactId>
+	        <version>1.2.3</version>
+	    </dependency>
+	    <dependency>
+	        <groupId>org.apache.shiro</groupId>
+	        <artifactId>shiro-spring</artifactId>
+	        <version>1.2.3</version>
+	    </dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>Demo-SpringMVC</finalName>
