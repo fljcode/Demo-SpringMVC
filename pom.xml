@@ -230,6 +230,19 @@
 	        <artifactId>shiro-spring</artifactId>
 	        <version>1.2.3</version>
 	    </dependency>
+	    <!-- hibernate 相关-->
+	    <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.0.4.Final</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.0.4.Final</version>
+			<scope>provided</scope>
+		</dependency>
 		
 	</dependencies>
 	<build>
