@@ -6,21 +6,20 @@ import java.io.FileOutputStream;
 import java.util.LinkedList;
 import java.util.List;
 
-
 import org.dom4j.Document;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
-import fan.createxml.MapperXmlCreator;
-import fan.createxml.User;
+import fan.createxml.*;
+import fan.domain.Material;
 
 public class GenerateMapperXml {
 
 	public static void main(String[] args) throws Exception {
 		MapperXmlCreator c = new MapperXmlCreator();
 		List<Class<?>> models = new LinkedList<Class<?>>();
-		
-		models.add(User.class);
+		models.add(Material.class);
+		//models.add(User.class);
 		c.setModels(models);
 
 		List<Document> docs = c.build();
